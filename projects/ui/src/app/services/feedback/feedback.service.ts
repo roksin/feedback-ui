@@ -10,7 +10,7 @@ import {FeedbackRequestModel} from '../../models/feedback-request.model';
   providedIn: 'root'
 })
 export class FeedbackService {
-  private feedbackUrl = 'http://localhost:8080/api/feedback';
+  private feedbackUrl = 'https://app-x6j5nums4q-uc.a.run.app/api/feedback';
 
   _sendFeedbackSuccess: BehaviorSubject<FeedbackResponseModel> =
     new BehaviorSubject<FeedbackResponseModel>(new FeedbackResponseModel());

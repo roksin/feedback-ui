@@ -9,7 +9,7 @@ import {ConfigModel} from '../../models/config.model';
   providedIn: 'root'
 })
 export class ConfigService {
-  private configUrl = 'http://localhost:8080/api/config';
+  private configUrl = 'https://app-x6j5nums4q-uc.a.run.app/api/config';
 
   _getConfig: BehaviorSubject<ConfigModel> = new BehaviorSubject<ConfigModel>(new ConfigModel());
 
