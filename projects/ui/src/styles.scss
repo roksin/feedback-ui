@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.full-width{
+  width: 100% !important;
+}
+
+@media screen and (max-width: 576px){
+  .nx-modal{
+    width: 90% !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .nx-modal{
+    width: 60% !important;
+  }
+}
+

@@ -1,0 +1,9 @@
+<div class="nx-textarea_container">
+  <label>Kalan karakter: {{2000 - comment.length}}</label>
+  <textarea rows="10" maxlength="2000"
+            id="feedbackComment"
+            type="input"
+            (ngModelChange)="setComment($event)"
+            [(ngModel)]="comment"
+  ></textarea>
+</div>

@@ -1,0 +1,9 @@
+<app-button
+  class="nx-feedback_button"
+  [dataTestId]="'nx-feedback-button'"
+  (onButtonClick)="openFeedbackModal()"
+  [buttonText]="config?.modalOpenButtonText"
+  [imageShow]="!config?.modalOpenButtonText"
+  [imageUrl]="image"
+>
+</app-button>
