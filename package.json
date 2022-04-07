@@ -9,7 +9,8 @@
     "test-coverage": "ng test ui --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --prod --base-href ./"
+    "build-prod": "ng build --prod --base-href ./",
+    "gh-pages-deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
