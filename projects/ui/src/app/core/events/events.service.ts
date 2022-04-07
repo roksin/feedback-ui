@@ -26,7 +26,8 @@ export class EventsService {
 
     onShowModalButtonClick(): void {
         this._modalShowButtonAction$.next(null);
-        window.postMessage({sender: 'feedback', message: 'openModal'}, '*');
+        window.parent.postMessage({sender: 'feedback', message: 'openModal'}, '*');
+        console.dir('post click');
     }
 
     onSendFeedbackButtonClick(commentStr: string): void {
