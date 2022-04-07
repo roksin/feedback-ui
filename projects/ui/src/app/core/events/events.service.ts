@@ -27,7 +27,7 @@ export class EventsService {
     onShowModalButtonClick(): void {
         this._modalShowButtonAction$.next(null);
         window.parent.postMessage({sender: 'feedback', message: 'openModal'}, '*');
-        console.dir('post click');
+        console.dir('modal open');
     }
 
     onSendFeedbackButtonClick(commentStr: string): void {
@@ -40,6 +40,8 @@ export class EventsService {
     onCloseModalButtonClick(): void {
         this.feedbackService._sendFeedbackSuccess.next({success: false});
         this._modalCloseButtonAction$.next(null);
+        window.parent.postMessage({sender: 'feedback', message: 'closeModal'}, '*');
+        console.dir('modal close');
     }
 }
 
